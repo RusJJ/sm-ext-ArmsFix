@@ -11,7 +11,7 @@
 #define SMEXT_CONF_DESCRIPTION	"Fix glove overcap with custom arms"
 #define SMEXT_CONF_VERSION		"1.0"
 #define SMEXT_CONF_AUTHOR		"Kyle (4y)"
-#define SMEXT_CONF_URL			"https://www.kxnrl.com/git/CSGO-ArmsFix"
+#define SMEXT_CONF_URL			"https://github.com/RusJJ/sm-ext-ArmsFix"
 #define SMEXT_CONF_LOGTAG		"ArmsFix"
 #define SMEXT_CONF_LICENSE		"GPL"
 #define SMEXT_CONF_DATESTRING	__DATE__

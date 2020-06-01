@@ -9,7 +9,6 @@ class      ArmsFix :
 public:
 
     // SDKExtension
-    virtual bool SDK_OnLoad(char *error, size_t maxlength, bool late);
     virtual void SDK_OnUnload();
 
     // Self

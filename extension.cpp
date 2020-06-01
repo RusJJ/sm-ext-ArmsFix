@@ -12,17 +12,9 @@ int ArmsFix::PrecacheModel(const char *model, bool precache)
 {
     if (V_strncmp(model, "models/weapons/v_models/arms/glove_hardknuckle/", 47) == 0)
     {
-        // block
-        RETURN_META_VALUE(MRES_SUPERCEDE, 0);
+        RETURN_META_VALUE(MRES_SUPERCEDE, 0); // block
     }
-
     RETURN_META_VALUE(MRES_IGNORED, 0);
-}
-
-bool ArmsFix::SDK_OnLoad(char *error, size_t maxlength, bool late)
-{
-    smutils->LogMessage(myself, "Init...");
-    return true;
 }
 
 void ArmsFix::SDK_OnUnload()

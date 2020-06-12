@@ -1,10 +1,7 @@
-﻿#include "extension.h"
-#include "eiface.h"
+#include "extension.h"
 
 ArmsFix g_ArmsFix;
 SMEXT_LINK(&g_ArmsFix);
-
-//IVEngineServer *engine = NULL;
 
 SH_DECL_HOOK2(IVEngineServer, PrecacheModel, SH_NOATTRIB, 0, int, const char *, bool);
 
@@ -12,7 +9,7 @@ int ArmsFix::PrecacheModel(const char *model, bool precache)
 {
     if (V_strncmp(model, "models/weapons/v_models/arms/glove_hardknuckle/", 47) == 0)
     {
-        RETURN_META_VALUE(MRES_SUPERCEDE, 0); // block
+        RETURN_META_VALUE(MRES_SUPERCEDE, 0);
     }
     RETURN_META_VALUE(MRES_IGNORED, 0);
 }
@@ -26,6 +23,5 @@ bool ArmsFix::SDK_OnMetamodLoad(ISmmAPI *ismm, char *error, size_t maxlen, bool 
 {
     GET_V_IFACE_CURRENT(GetEngineFactory, engine, IVEngineServer, INTERFACEVERSION_VENGINESERVER);
     SH_ADD_HOOK(IVEngineServer, PrecacheModel, engine, SH_MEMBER(this, &ArmsFix::PrecacheModel), false);
-
     return true;
 }

@@ -7,14 +7,14 @@
  */
 
 /* Basic information exposed publicly */
-#define SMEXT_CONF_NAME			"CSGO-ArmsFix"
-#define SMEXT_CONF_DESCRIPTION	"Fix glove overcap with custom arms"
-#define SMEXT_CONF_VERSION		"1.0"
-#define SMEXT_CONF_AUTHOR		"Kyle (4y)"
-#define SMEXT_CONF_URL			"https://github.com/RusJJ/sm-ext-ArmsFix"
-#define SMEXT_CONF_LOGTAG		"ArmsFix"
-#define SMEXT_CONF_LICENSE		"GPL"
-#define SMEXT_CONF_DATESTRING	__DATE__
+#define SMEXT_CONF_NAME         "CSGO-ArmsFix"
+#define SMEXT_CONF_DESCRIPTION  "Fixes glove overlapping with custom arms"
+#define SMEXT_CONF_VERSION      "1.0"
+#define SMEXT_CONF_AUTHOR       "Kyle (4y)"
+#define SMEXT_CONF_URL          "https://github.com/RusJJ/sm-ext-ArmsFix"
+#define SMEXT_CONF_LOGTAG       "ArmsFix"
+#define SMEXT_CONF_LICENSE      "GPL"
+#define SMEXT_CONF_DATESTRING   __DATE__
 
 /**
  * @brief Exposes plugin's main interface.
@@ -41,7 +41,7 @@
 //#define SMEXT_ENABLE_MENUS
 //#define SMEXT_ENABLE_ADTFACTORY
 //#define SMEXT_ENABLE_PLUGINSYS
-#define SMEXT_ENABLE_ADMINSYS
+//#define SMEXT_ENABLE_ADMINSYS
 //#define SMEXT_ENABLE_TEXTPARSERS
 //#define SMEXT_ENABLE_USERMSGS
 //#define SMEXT_ENABLE_TRANSLATOR

@@ -3,8 +3,7 @@
 
 #include "smsdk_ext.h"
 
-class      ArmsFix :
-    public SDKExtension
+class ArmsFix : public SDKExtension
 {
 public:
 
@@ -17,5 +16,4 @@ public:
     // Metamod
     virtual bool SDK_OnMetamodLoad(ISmmAPI *ismm, char *error, size_t maxlen, bool late);
 };
-
 #endif
